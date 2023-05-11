@@ -1,2 +1,4 @@
 # Date_structure
-Hallym University's first semester course, professor : Hankyu Joo
+
+한림대학교 4학년 1학기 자료구조 강의
+교수명 : 주한규
