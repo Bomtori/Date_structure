@@ -18,10 +18,7 @@ public class LinkedList {
 	}
 	
 	public void addFirst(String name) {
-		if(length == 0)
-			first = new ListNode(name, null);
-		else
-			first = new ListNode(name, first);
+		first = new ListNode(name, first);
 		length++;
 	}
 	
