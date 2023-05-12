@@ -26,7 +26,7 @@ public class LinkedList {
 	}
 	
 	public void print() {
-		for(ListNode target=first; target!=null; target=target.getLink())
+		for(ListNode target = first; target != null; target = target.getLink())
 			System.out.println(target.getName());
 	}
 	
