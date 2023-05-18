@@ -50,4 +50,25 @@ public class LinkedList {
 		}
 		length++;
 	}
+	
+	public void insertFront(String name, ListNode target) {
+		ListNode newNode=new ListNode(name, target);
+		if(first==null) 
+			addFirst(name);
+		else if(first.getLink()==null||target==first) {
+			ListNode temp=first;
+			first=newNode;
+			newNode.setLink(temp);
+		}else {
+			ListNode node=first;
+			while(node!=null) {
+				if(target==node.getLink())
+					break;
+				node=node.getLink();
+			}
+			newNode.setLink(node.getLink());
+			node.setLink(newNode);
+		}
+		length++;
+	}
 }
